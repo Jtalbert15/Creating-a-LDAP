@@ -1,12 +1,10 @@
 # Creating-a-LDAP
-In this lab we will gain access to Active Directory through a VM other than our server 
 
-To start it is not best practice to modify active directory with our server machine
+<h1>Summary</h1>
 
-We can access active directory through a non server machine and in this lab we will go through that setup process 
+In this lab we will gain access to Active Directory through a VM other than our server. We will utilize LDAP (Lightweight Directory Access Protocol). LDAP allows us to modify Active Directory through a machine other than our server machines. LDAP utilizes TCP Port 389 to allow us to do this.
 
-To do this we need to boot up our server machine as well as a client machine
-
+<h1>Step 1) Logging in and Setting Users Group</h1>
 <img width="636" alt="Screenshot 2024-06-05 at 5 41 32 PM" src="https://github.com/Jtalbert15/Creating-a-LDAP/assets/66844406/d6e736b1-a32d-49cf-a910-bd1b381acce4">
 
 Take note of what client account you are logging into we will need to give the user permissions
@@ -26,6 +24,8 @@ When your account is created you are a domain user by default
 Typically you would not be a member of Administrators unless you are very high up but for simplicity's sake we added ourselves to the administrators group
 
 Now let's navigate back to our user's client. You may have to restart your VM so changes take effect
+
+<h1>Step 2) Downloading Active Directory</h1>
 
 Now using Microsoft edge search active directory download windows 10
 
